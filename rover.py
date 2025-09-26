@@ -43,7 +43,31 @@ def move_rover(s, coordinates, obstacles):
 
     return coordinates
 
+"""
+Sample Input:
+2
+0 0 1
+0 1 0
+6
+up 1
+down 1
+left 1
+right 1
+forward 1
+backward 1
 
+Sample Output:
+oops, you're running into an obstacle
+Remaining here: 0 0 0
+oops, you're going out of bounds here
+Remaining here: 0 0 0
+oops, you're running into an obstacle
+Remaining here: 0 0 0
+oops, you're going out of bounds here
+Remaining here: 0 0 0
+Current coordinates: 1 0 0
+Current coordinates: 0 0 0
+"""
 
 m = int(input()) # number of obstacles
 obstacles = set()
